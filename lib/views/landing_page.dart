@@ -8,7 +8,7 @@ import 'package:google_fonts/google_fonts.dart';
 // ignore: must_be_immutable
 class LandingPage extends StatelessWidget {
   String subtitle =
-      'At Finance we care about your future. We help you\ninvest the way you want. So you can relax, have fun\nand let your fund grow.';
+      'At Meanwhile we care about your Game-Loop. We help you get filled session with tier players the way you want. So you can relax, have fun and let your game grow.';
 
   LandingPage({Key? key}) : super(key: key);
 
@@ -36,7 +36,7 @@ class LandingPage extends StatelessWidget {
                             children: [
                               const Spacer(),
                               Text(
-                                'Mutual Investment',
+                                'Matchamking AI',
                                 style: GoogleFonts.overpass(
                                   fontWeight: FontWeight.bold,
                                   fontSize: size.width * 0.03,

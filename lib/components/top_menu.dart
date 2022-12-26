@@ -3,7 +3,6 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../constants.dart';
 
-
 class TopMenu extends StatelessWidget {
   const TopMenu({
     Key? key,
@@ -45,7 +44,7 @@ class TopMenu extends StatelessWidget {
               Image.asset('assets/icons/finnace.png'),
               const SizedBox(width: 10),
               Text(
-                'Finance',
+                'Meanwhile',
                 style: GoogleFonts.mavenPro(
                     color: kTitleColor,
                     fontSize: size.width * 0.02,
