@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "31867782220",
+    "project_id": "flutter-web-finance",
+    "storage_bucket": "flutter-web-finance.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:31867782220:android:2fde9a859377ff23a2a0e9",
+        "android_client_info": {
+          "package_name": "com.example.finance_web"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "31867782220-rqqnh3agn86ijhsaq5uqe5p4m0qhias4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzAcVlROStUaj3IQssBmNzIur4lQPpxlI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "31867782220-rqqnh3agn86ijhsaq5uqe5p4m0qhias4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
