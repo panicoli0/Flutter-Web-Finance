@@ -36,7 +36,7 @@ class LandingPage extends StatelessWidget {
                             children: [
                               const Spacer(),
                               Text(
-                                'VENGO DE DEV Matchamking AI',
+                                'VENGO DE new-feature Matchamking AI',
                                 style: GoogleFonts.overpass(
                                   fontWeight: FontWeight.bold,
                                   fontSize: size.width * 0.03,
