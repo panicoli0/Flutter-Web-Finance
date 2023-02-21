@@ -55,34 +55,62 @@ class LandingPage extends StatelessWidget {
                               SizedBox(height: size.height * 0.08),
                               Column(
                                 children: [
-                                  ElevatedButton(
-                                    onPressed: () {},
-                                    style: ElevatedButton.styleFrom(
-                                      primary: kPrimeryColor,
-                                      padding: EdgeInsets.symmetric(
-                                          vertical: 20,
-                                          horizontal: size.width * 0.04),
-                                      shape: RoundedRectangleBorder(
-                                          borderRadius:
-                                              BorderRadius.circular(50)),
-                                    ),
-                                    child: Text(
-                                      'Learn more',
-                                      style: GoogleFonts.overpass(
-                                        fontSize: size.width * 0.01,
-                                        color: Colors.white,
+                                  Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceEvenly,
+                                    children: [
+                                      ElevatedButton(
+                                        onPressed: () {},
+                                        style: ElevatedButton.styleFrom(
+                                          primary: kPrimeryColor,
+                                          padding: EdgeInsets.symmetric(
+                                              vertical: 20,
+                                              horizontal: size.width * 0.04),
+                                          shape: RoundedRectangleBorder(
+                                              borderRadius:
+                                                  BorderRadius.circular(50)),
+                                        ),
+                                        child: Text(
+                                          'Learn more',
+                                          style: GoogleFonts.overpass(
+                                            fontSize: size.width * 0.01,
+                                            color: Colors.white,
+                                          ),
+                                        ),
                                       ),
-                                    ),
+                                      ElevatedButton(
+                                        onPressed: () {},
+                                        style: ElevatedButton.styleFrom(
+                                          primary: kPrimeryColor,
+                                          padding: EdgeInsets.symmetric(
+                                              vertical: 20,
+                                              horizontal: size.width * 0.04),
+                                          shape: RoundedRectangleBorder(
+                                              borderRadius:
+                                                  BorderRadius.circular(50)),
+                                        ),
+                                        child: Text(
+                                          'SignIn',
+                                          style: GoogleFonts.overpass(
+                                            fontSize: size.width * 0.01,
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
                                   ),
-                                  Container(
-                                    margin: const EdgeInsets.only(top: 10),
-                                    width: size.width * 0.035,
-                                    height: 2,
-                                    decoration: BoxDecoration(
-                                        color: const Color(0xff4F4F4F),
-                                        borderRadius:
-                                            BorderRadius.circular(50)),
-                                  )
+                                  // Container(
+                                  //   margin: const EdgeInsets.only(
+                                  //     top: 10,
+                                  //     left: 320,
+                                  //   ),
+                                  //   width: size.width * 0.035,
+                                  //   height: 2,
+                                  //   decoration: BoxDecoration(
+                                  //       color: const Color(0xff4F4F4F),
+                                  //       borderRadius:
+                                  //           BorderRadius.circular(50)),
+                                  // )
                                 ],
                               ),
                               const Spacer(
