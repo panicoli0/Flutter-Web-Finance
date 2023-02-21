@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <!--
     If you are serving your web app in a path other than the root, change the
@@ -26,9 +27,13 @@
   <meta name="apple-mobile-web-app-title" content="finance_web">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
+  <!-- Google meta tags & icons -->
+  <meta name="google-signin-client_id" content="331937435196-45htsu85ka756vpgkvsi8s2kal2eb3c7.apps.googleusercontent.com">
+
   <title>finance_web</title>
   <link rel="manifest" href="manifest.json">
 </head>
+
 <body>
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
@@ -97,5 +102,27 @@
       loadMainDartJs();
     }
   </script>
+  <!-- The core Firebase JS SDK (always required for using any firebase service) -->
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+  <!-- Firebase Auth SDK -->
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyAVBb95DuA9n-7dU7DgmtWBzSrcLbtDrZU",
+      authDomain: "flutter-web-finance.firebaseapp.com",
+      projectId: "flutter-web-finance",
+      storageBucket: "flutter-web-finance.appspot.com",
+      messagingSenderId: "31867782220",
+      appId: "1:31867782220:web:c6d86922a87b50ada2a0e9",
+      measurementId: "G-4WKDH5G4V5"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <!-- END OF FIREBASE INIT CODE -->
+  <script src="main.dart.js" type="application/javascript"></script>
+
 </body>
+
 </html>
