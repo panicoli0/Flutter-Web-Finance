@@ -1,11 +1,17 @@
 import 'package:easy_dynamic_theme/easy_dynamic_theme.dart';
+import 'package:finance_web/firebase_options.dart';
 import 'package:finance_web/utils/authentication.dart';
 import 'package:finance_web/utils/theme_data.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
 import 'screens/home_page.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(
     EasyDynamicThemeWidget(
       child: MyApp(),

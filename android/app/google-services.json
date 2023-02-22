@@ -14,7 +14,7 @@
       },
       "oauth_client": [
         {
-          "client_id": "31867782220-rqqnh3agn86ijhsaq5uqe5p4m0qhias4.apps.googleusercontent.com",
+          "client_id": "31867782220-rbhuaonoe857r6v4s0hr2u6il8n8v5rn.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
@@ -27,8 +27,15 @@
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "31867782220-rqqnh3agn86ijhsaq5uqe5p4m0qhias4.apps.googleusercontent.com",
+              "client_id": "31867782220-rbhuaonoe857r6v4s0hr2u6il8n8v5rn.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "31867782220-igdajifn2rtq465h004cg17qclrvmos8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.financeWeb"
+              }
             }
           ]
         }

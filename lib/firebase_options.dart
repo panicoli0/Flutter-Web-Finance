@@ -70,8 +70,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '31867782220',
     projectId: 'flutter-web-finance',
     storageBucket: 'flutter-web-finance.appspot.com',
-    iosClientId:
-        '31867782220-igdajifn2rtq465h004cg17qclrvmos8.apps.googleusercontent.com',
+    iosClientId: '31867782220-igdajifn2rtq465h004cg17qclrvmos8.apps.googleusercontent.com',
     iosBundleId: 'com.example.financeWeb',
   );
 }
