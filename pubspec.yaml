@@ -9,14 +9,17 @@ environment:
   sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
-  cupertino_icons: ^1.0.2
-  firebase_auth: ^4.2.8
-  firebase_core: ^2.6.1
+  
   flutter:
     sdk: flutter
+  
   google_fonts: ^2.1.0
   google_sign_in: ^6.0.0
   shared_preferences: ^2.0.17
+  cupertino_icons: ^1.0.2
+  firebase_auth: ^4.2.8
+  firebase_core: ^2.6.1
+  easy_dynamic_theme: ^2.0.0
 
 dev_dependencies:
 
@@ -27,6 +30,8 @@ dev_dependencies:
 flutter:
 
   uses-material-design: true
+
+  # TODO: Add fonts here
 
   # To add assets to your application, add an assets section, like this:
   assets:
