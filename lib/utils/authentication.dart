@@ -13,6 +13,26 @@ String? userEmail;
 String? name;
 String? imageUrl;
 
+/// For checking if the user is already signed into the
+/// app using Google Sign In
+Future getUser() async {
+  await Firebase.initializeApp();
+
+  SharedPreferences prefs = await SharedPreferences.getInstance();
+  bool authSignedIn = prefs.getBool('auth') ?? false;
+
+  final User? user = _auth.currentUser;
+
+  if (authSignedIn == true) {
+    if (user != null) {
+      uid = user.uid;
+      name = user.displayName;
+      userEmail = user.email;
+      imageUrl = user.photoURL;
+    }
+  }
+}
+
 /// For authenticating user using Google Sign In
 /// with Firebase Authentication API.
 ///
