@@ -1,23 +1,45 @@
-import 'package:finance_web/views/landing_page.dart';
+import 'package:easy_dynamic_theme/easy_dynamic_theme.dart';
+import 'package:finance_web/utils/authentication.dart';
+import 'package:finance_web/utils/theme_data.dart';
 import 'package:flutter/material.dart';
 
+import 'screens/home_page.dart';
+
 void main() {
-  runApp(const MyApp());
+  runApp(
+    EasyDynamicThemeWidget(
+      child: MyApp(),
+    ),
+  );
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+class MyApp extends StatefulWidget {
+  @override
+  _MyAppState createState() => _MyAppState();
+}
 
-  // This widget is the root of your application.
+class _MyAppState extends State<MyApp> {
+  Future getUserInfo() async {
+    await getUser();
+    setState(() {});
+    print(uid);
+  }
+
+  @override
+  void initState() {
+    getUserInfo();
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'MySquad',
+      theme: lightThemeData,
+      darkTheme: darkThemeData,
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Web',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home:  LandingPage(),
+      themeMode: EasyDynamicTheme.of(context).themeMode,
+      home: HomePage(),
     );
   }
 }
